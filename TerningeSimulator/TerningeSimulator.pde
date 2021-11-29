@@ -23,4 +23,5 @@ void draw() {
     rolls [rollCounter] = 0;
     rollCounter--;
   }
+  println();
 }
