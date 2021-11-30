@@ -33,12 +33,20 @@ void displayHistogram(int[] a) {
       seks++;
     }
   }
-  for (int i = 0; i < et; i++) {
+  fill(255);
+  rect(100, 450, 40, -10*et);
+  rect(150, 450, 40, -10*to);
+  rect(200, 450, 40, -10*tre);
+  rect(250, 450, 40, -10*fire);
+  rect(300, 450, 40, -10*fem);
+  rect(350, 450, 40, -10*seks);
   
-  
-  
-  
-  }
+  text("1",100,475);
+  text("2",150,475);
+  text("3",200,475);
+  text("4",250,475);
+  text("5",300,475);
+  text("6",350,475);
 }
 
 boolean newRollPressed(int x, int y) {
@@ -58,5 +66,5 @@ boolean deleteRollPressed(int x, int y) {
 }
 
 int diceRoll() {
-  return int(random(1, 6));
+  return int(random(1, 7));
 }
